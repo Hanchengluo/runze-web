@@ -1,0 +1,79 @@
+.project-list{
+  position: relative;
+  overflow: hidden;
+  width: 1100px;
+  height: 450px;
+  margin: 30px auto 0 auto;
+}
+.ck-slide {
+    position: absolute;
+    top: 74px;
+}
+.ck-slide ul.ck-slide-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  height: 320px;
+}
+.ck-slide ul.ck-slide-wrapper li {
+  position: absolute; margin-top:0px;
+  width:1100px; height: 320px;
+}
+.project-list .ck-prev, .project-list .ck-next {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: 36px;
+  height: 40px;
+  opacity: .15;
+  background: red;
+  text-indent:-9999px ;
+  background-repeat: no-repeat;
+  transition: opacity .2s linear 0s;
+}
+.project-list .ck-prev {
+  left: 50%;
+  margin-left: -36px;
+  background: url(../../images/arrow-left.png) #000 50% no-repeat;
+}
+.project-list .ck-next {
+  right: 50%;
+  margin-right: -36px;
+  background: url(../../images/arrow-right.png) #000 50% no-repeat;
+}
+.ck-slidebox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    width: 100%;
+    text-align: center;
+}
+.slideWrap{
+  display: inline-block;
+}
+.ck-slidebox ul {
+  padding: 0 4px;
+}
+.ck-slidebox ul li {
+  float: left;
+  height: 30px;
+  margin: 4px 4px;
+}
+.ck-slidebox ul li em {
+    display: block;
+    background-color: #e1e1e1;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 26px;
+    font-size: 16px;
+}
+.ck-slidebox ul li.current em {
+  background-color: #018ED8;
+}
+.ck-slidebox ul li em:hover {
+  background-color: #018ED8;
+}

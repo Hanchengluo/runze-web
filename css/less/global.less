@@ -1,0 +1,135 @@
+// float layout
+.l-left{float: left;}
+.l-right{float: right;}
+.l-float{.clearfix();}
+
+// background
+.bg-bai{
+  background: #fff;
+}
+.bg-hui{
+  background: #f5f5f5;
+}
+.bg-lan{
+  background: #018ed8;
+}
+
+// width
+.mian{
+  width: 100%;
+}
+.w1100{
+  .est-layout-page(1100px);
+}
+.big-title{
+  border-bottom:#dbdbdb solid 1px;
+  width: 100%;
+  text-align: center;
+  h2{
+    display: inline-block;
+    margin-bottom: -1px;
+    padding: 0 2px;
+    border-bottom:#dbdbdb solid 4px;
+    line-height: 34px;
+    font-size: 18px;
+    color: #232323;
+    text-transform:uppercase;
+  }
+}
+// top-nav
+#top-nav{
+  width: 100%;
+  background:#fafafa;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  a{
+    color: #535353;
+    padding: 0 5px;
+    font-size: 16px;
+  }
+  .qq{
+    padding-left:24px;
+    background: url(../../images/icon-qq.png) left center no-repeat;
+  }
+}
+
+// header
+#header{
+  padding: 24px 0;
+  .logo{
+    width:226px;
+    height: auto;
+    img{
+      width: 100%;
+    }
+  }
+  .tel{
+    margin-top: 30px;
+    padding-left: 36px;
+    background: url(../../images/icon-tel.png) left center no-repeat;
+    font-family:Arial;
+    color: #018ed8;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+}
+
+// nav
+#nav{
+  height: 44px;
+  color: #fff;
+  li{
+    float: left;
+    width: 136px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    a{
+      display: block;
+      font-size: 18px;
+    }
+    &:hover{
+      background:#0d72bd;
+    }
+  }
+}
+
+// fooder
+.fooder{
+  width: 100%;
+  color: #fff;
+  background:url(../../images/icon-fooder-map.png) top center no-repeat;
+}
+.fooder-left{
+  width: 535px;
+  padding:56px 10px;
+  .button-about{
+    font-size: 14px;
+    line-height: 24px;
+    text-indent: 28px;
+  }
+}
+.fooder-right{
+  width: 505px;
+  padding:34px 10px;
+  font-size: 14px;
+  .buttom-weixin{
+    li{
+      float: left;
+      width:120px;
+      text-align: center;
+    }
+  }
+  .buttom-info{
+    padding-top: 20px;
+    line-height: 24px;
+  }
+}
+#copyright{
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  background: #02101c;
+}
