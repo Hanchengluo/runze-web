@@ -80,19 +80,39 @@
 #nav{
   height: 44px;
   color: #fff;
-  li{
+  .item{
+    position: relative;
     float: left;
     width: 136px;
     height: 44px;
     line-height: 44px;
-    text-align: center;
-    a{
+    text-align: center;}
+    .item>a{
       display: block;
       font-size: 18px;
     }
-    &:hover{
+    .item>.active, .item>a:hover{
       background:#0d72bd;
+      color: #fff;
     }
+  .down-nav{
+    display: none;
+    z-index: 9999;
+    background: #018ED8;
+    width: 136px;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    a{
+      display: block;
+      color: #fff;
+      &:hover{
+        background:#0d72bd !important;
+      }
+    }
+  }
+  .item:hover .down-nav{
+    display: block !important;
   }
 }
 

@@ -398,19 +398,41 @@ input:-ms-input-placeholder {
   height: 44px;
   color: #fff;
 }
-#nav li {
+#nav .item {
+  position: relative;
   float: left;
   width: 136px;
   height: 44px;
   line-height: 44px;
   text-align: center;
 }
-#nav li a {
+#nav .item > a {
   display: block;
   font-size: 18px;
 }
-#nav li:hover {
+#nav .item > .active,
+#nav .item > a:hover {
   background: #0d72bd;
+  color: #fff;
+}
+#nav .down-nav {
+  display: none;
+  z-index: 9999;
+  background: #018ED8;
+  width: 136px;
+  position: absolute;
+  left: 0;
+  top: 44px;
+}
+#nav .down-nav a {
+  display: block;
+  color: #fff;
+}
+#nav .down-nav a:hover {
+  background: #0d72bd !important;
+}
+#nav .item:hover .down-nav {
+  display: block !important;
 }
 .fooder {
   width: 100%;
@@ -479,24 +501,34 @@ input:-ms-input-placeholder {
   line-height: 24px;
 }
 #services li .services-info {
-  display: none;
   width: 140px;
+  height: 0;
   position: absolute;
   top: 0;
   left: 50%;
   bottom: 0;
   margin-left: -80px;
-  padding: 20px 10px;
+  padding: 0 10px;
   color: #fff;
   font-size: 14px;
   line-height: 24px;
+  overflow: hidden;
+  text-align: left;
   background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) repeat\0;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3018ed8,endColorstr=#b3018ed8)\0;
   zoom: 1\0;
   background: rgba(1, 142, 216, 0.7);
+  -webkit-transition: height .5s ease;
+  -moz-transition: height .5s ease;
+  -o-transition: height .5s ease;
+  -ms-transition: height .5s ease;
+  transition: height .5s ease;
 }
 :root #services li .services-info {
   filter: none\9;
+}
+#services li:hover .services-info {
+  height: 240px;
 }
 .column-title {
   padding-bottom: 4px;
@@ -514,6 +546,7 @@ input:-ms-input-placeholder {
 #new-left {
   width: 536px;
   padding-top: 16px;
+  padding-bottom: 34px;
 }
 #new-left li {
   float: left;
@@ -527,6 +560,10 @@ input:-ms-input-placeholder {
   border-bottom-color: #B7B6B6;
   text-indent: 10px;
   color: #555252;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
 }
 #new-left li img {
   float: left;
@@ -535,6 +572,7 @@ input:-ms-input-placeholder {
 #new-right {
   width: 536px;
   padding-top: 16px;
+  padding-bottom: 34px;
 }
 #new-right li {
   width: 100%;
@@ -550,6 +588,14 @@ input:-ms-input-placeholder {
   text-indent: 10px;
   color: #555252;
 }
+#new-right li a {
+  display: inline-block;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
 #new-right li em {
   float: right;
 }
@@ -560,7 +606,7 @@ input:-ms-input-placeholder {
   position: relative;
   overflow: hidden;
   width: 1100px;
-  height: 450px;
+  height: 400px;
   margin: 30px auto 0 auto;
 }
 .ck-slide {
@@ -637,4 +683,47 @@ input:-ms-input-placeholder {
 }
 .ck-slidebox ul li em:hover {
   background-color: #018ED8;
+}
+.project-box {
+  float: left;
+  width: 317px;
+  height: 270px;
+  margin: 0 23px;
+  background: #fff;
+  border: #E6E5E5 solid 1px;
+}
+.project-box h3 {
+  padding: 18px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.project-box a:hover {
+  color: #018ED8;
+}
+.project-box .t1 {
+  font-size: 16px;
+  color: #888888;
+}
+.project-box .t2 {
+  font-size: 18px;
+  color: #3f3f3f;
+}
+.project-box .project-time {
+  padding: 0 10px;
+  color: #888888;
+  font-size: 16px;
+}
+.project-box .porject-img img:hover {
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  transform: scale(1.04);
 }
