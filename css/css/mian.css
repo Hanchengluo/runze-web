@@ -434,6 +434,59 @@ input:-ms-input-placeholder {
 #nav .item:hover .down-nav {
   display: block !important;
 }
+.list-title {
+  border-bottom: #018ed8 solid 1px;
+  margin-bottom: 30px;
+}
+.list-title a {
+  display: inline-block;
+  padding: 6px 2px;
+  margin-right: 4px;
+  font-size: 18px;
+  color: #252525;
+}
+.list-title span {
+  display: inline-block;
+  padding: 6px 2px;
+  margin-right: 4px;
+  font-size: 16px;
+  color: #525252;
+}
+.list-title .active,
+.list-title a:hover {
+  color: #018ed8;
+  border-bottom: #018ed8 solid 2px;
+}
+#page-box {
+  padding: 10px 0;
+}
+#page-box strong {
+  background-color: #0D72BD;
+  color: #FFFFFF;
+  border: 1px solid #018ED8;
+  height: 32px;
+  line-height: 32px;
+  padding: 0px 12px;
+  float: left;
+  margin-left: 4px;
+  display: inline;
+  text-decoration: none;
+}
+#page-box a {
+  height: 32px;
+  line-height: 32px;
+  padding: 0px 12px;
+  float: left;
+  display: inline;
+  margin-left: 4px;
+  border: 1px solid;
+  border-color: #C2D5E3;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  color: #333;
+  overflow: hidden;
+  text-decoration: none;
+}
 .fooder {
   width: 100%;
   color: #fff;
@@ -602,6 +655,196 @@ input:-ms-input-placeholder {
 #project {
   padding: 40px 0;
 }
+#project-page {
+  padding-top: 20px;
+}
+#project-page .project-box {
+  margin-right: 71px;
+  margin-bottom: 36px;
+  margin-left: 0;
+}
+#project-page .project-box:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#project-page .margin-none {
+  margin-right: 0px;
+}
+.video-info {
+  width: 715px;
+  height: 515px;
+  margin-bottom: 34px;
+}
+.video-text {
+  width: 354px;
+  height: 515px;
+  margin-bottom: 34px;
+}
+.video-text h2 {
+  font-size: 18px;
+  padding-bottom: 12px;
+  color: #525252;
+}
+.video-text .time {
+  padding-bottom: 12px;
+  font-size: 16px;
+  color: #a7a7a7;
+}
+.video-text .intro {
+  font-size: 16px;
+  color: #525252;
+  line-height: 24px;
+}
+#articleList {
+  width: 100%;
+  margin-top: -24px;
+  padding-bottom: 34px;
+}
+#articleList li {
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  height: 45px;
+  line-height: 45px;
+  background-image: url(../../images/ji_16.jpg);
+  background-repeat: no-repeat;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  border-bottom-color: #B7B6B6;
+  text-indent: 10px;
+  color: #555252;
+}
+#articleList li a {
+  display: inline-block;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#articleList li em {
+  float: right;
+}
+#articleInfo {
+  padding-bottom: 45px;
+  font-size: 14px;
+  color: #525252;
+  line-height: 150%;
+}
+#articleInfo .article-title {
+  font-size: 24px;
+  text-align: center;
+  font-family: '微软雅黑';
+  padding: 20px 0;
+}
+#articleInfo .article-time {
+  padding-bottom: 14px;
+  font-size: 12px;
+  color: #676666;
+}
+#articleInfo .article-intro {
+  width: 1080px;
+  margin-bottom: 14px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px #f0c781 dashed;
+  background: #fefdfa;
+  text-indent: 28px;
+}
+#articleInfo .article-content {
+  color: #525252;
+  line-height: 180%;
+}
+.contactme {
+  margin-bottom: 20px;
+  border-bottom: #606060 dashed 1px;
+}
+.contactme h3 {
+  font-size: 18px;
+  color: #525252;
+  padding-bottom: 12px;
+  font-weight: bold;
+}
+.contactme p {
+  font-size: 16px;
+  color: #525252;
+  padding-bottom: 12px;
+  line-height: 24px;
+}
+.about-banner {
+  height: 299px;
+  overflow: hidden;
+}
+.about-banner span {
+  display: inline-block;
+  width: 100%;
+  height: 299px;
+  background-repeat: no-repeat;
+}
+.about-title span {
+  display: inline-block;
+  padding: 2px;
+  border-bottom: #018ed8 solid 3px;
+  font-size: 18px;
+  color: #525252;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.about-title em {
+  display: inline-block;
+  text-indent: 12px;
+  text-transform: uppercase;
+  color: #9f9f9f;
+  font-size: 16px;
+}
+.about-me {
+  padding: 22px 0 ;
+}
+.about-me .intro {
+  width: 650px;
+  padding: 20px 0 34px 0;
+  line-height: 24px;
+}
+.about-history {
+  padding: 22px 0 ;
+}
+.about-history .history {
+  height: auto;
+  width: 1036px;
+  margin: 30px auto;
+  background: url(../../images/icon-history-bg.png) top center no-repeat;
+}
+.about-history .history li {
+  float: left;
+  width: 132px;
+  margin: 0 84px;
+}
+.about-history .history li .time {
+  color: #fff;
+  font-size: 24px;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+.about-history .history li .intro {
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 54px;
+  line-height: 18px;
+}
+.about-team {
+  padding: 22px 0;
+}
+.about-team .team {
+  padding: 20px 0 34px 0;
+}
+.about-team .team li {
+  float: left;
+  margin: 0 1px;
+}
 .project-list {
   position: relative;
   overflow: hidden;
@@ -688,9 +931,22 @@ input:-ms-input-placeholder {
   float: left;
   width: 317px;
   height: 270px;
-  margin: 0 23px;
+  margin-left: 23px;
+  margin-right: 23px;
   background: #fff;
   border: #E6E5E5 solid 1px;
+}
+.project-box .project-img {
+  position: relative;
+}
+.project-box .project-img em {
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 22px;
+  background: url(../../images/icon-trigon.png) center no-repeat;
 }
 .project-box h3 {
   padding: 18px 10px;
