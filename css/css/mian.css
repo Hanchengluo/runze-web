@@ -335,6 +335,15 @@ input:-ms-input-placeholder {
 .bg-lan {
   background: #018ed8;
 }
+.textl {
+  text-align: left;
+}
+.textr {
+  text-align: right;
+}
+.textc {
+  text-align: center;
+}
 .mian {
   width: 100%;
 }
@@ -844,6 +853,49 @@ input:-ms-input-placeholder {
 .about-team .team li {
   float: left;
   margin: 0 1px;
+}
+.apply-table {
+  border-top: #ddd solid 1px;
+  border-left: #ddd solid 1px;
+}
+.apply-table td {
+  border-bottom: #ddd solid 1px;
+  border-right: #ddd solid 1px;
+}
+.apply-input {
+  width: 154px;
+  height: 24px;
+  line-height: 24px;
+  border: #ddd solid 1px;
+  margin-left: 6px;
+  font-size: 14px;
+  text-indent: 4px;
+}
+.apply-select {
+  width: 156px;
+  height: 28px;
+  line-height: 28px;
+  border: #ddd solid 1px;
+  margin-left: 6px;
+  font-size: 14px;
+  text-indent: 4px;
+}
+.apply-bottom {
+  display: inline-block;
+  background-color: #018ed8;
+  border: 0px;
+  color: #FFFFFF;
+  width: 135px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 20px;
+  font-family: 微软雅黑;
+  margin: 25px auto ;
+  text-align: center;
+}
+.apply-bottom:hover {
+  background: #0d72bd;
+  color: #fff;
 }
 .project-list {
   position: relative;
