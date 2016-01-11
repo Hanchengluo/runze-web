@@ -453,6 +453,7 @@ input:-ms-input-placeholder {
   margin-right: 4px;
   font-size: 18px;
   color: #252525;
+  border-bottom: #FFFFFF solid 2px;
 }
 .list-title span {
   display: inline-block;
@@ -466,12 +467,12 @@ input:-ms-input-placeholder {
   color: #018ed8;
   border-bottom: #018ed8 solid 2px;
 }
-#page-box {
-  padding: 10px 0;
+#Gpager {
+  padding: 20px 0 0 0;
 }
-#page-box strong {
+#Gpager span {
   background-color: #0D72BD;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border: 1px solid #018ED8;
   height: 32px;
   line-height: 32px;
@@ -481,7 +482,7 @@ input:-ms-input-placeholder {
   display: inline;
   text-decoration: none;
 }
-#page-box a {
+#Gpager a {
   height: 32px;
   line-height: 32px;
   padding: 0px 12px;
@@ -503,7 +504,7 @@ input:-ms-input-placeholder {
 }
 .fooder-left {
   width: 535px;
-  padding: 56px 10px;
+  padding: 32px 10px;
 }
 .fooder-left .button-about {
   font-size: 14px;
@@ -607,6 +608,7 @@ input:-ms-input-placeholder {
 }
 #new-left {
   width: 536px;
+  min-height: 300px;
   padding-top: 16px;
   padding-bottom: 34px;
 }
@@ -633,6 +635,7 @@ input:-ms-input-placeholder {
 }
 #new-right {
   width: 536px;
+  min-height: 300px;
   padding-top: 16px;
   padding-bottom: 34px;
 }
@@ -666,6 +669,7 @@ input:-ms-input-placeholder {
 }
 #project-page {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 #project-page .project-box {
   margin-right: 71px;
